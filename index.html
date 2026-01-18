@@ -2,51 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Victoria FurBaby Vet | 24/7 Emergency Vet & Quotes Victoria BC</title>
     <meta name="description" content="24/7 emergency veterinary triage in Victoria, BC. Get an urgent care quote for your pet in 15-30 minutes.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>html { scroll-behavior: smooth; }</style>
 </head>
-<body class="bg-[#fcfaf7] font-sans text-slate-800">
-    <div class="bg-[#4a3728] text-white text-center py-2 font-bold uppercase text-xs tracking-widest">
-        🐾 EMERGENCY TRIAGE NURSE REVIEWING QUOTES IN 15-30 MINS
+<body class="bg-[#fcfaf7] font-sans text-slate-800 pb-20 md:pb-0">
+
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white/90 backdrop-blur-sm border-t md:hidden z-50">
+        <a href="#lead-form" class="flex items-center justify-center bg-[#4a3728] text-white font-black py-4 rounded-xl text-lg shadow-lg">
+            🐾 GET URGENT TRIAGE QUOTE
+        </a>
     </div>
-    <main class="max-w-6xl mx-auto py-12 px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+    <div class="bg-[#4a3728] text-white text-center py-2 font-bold uppercase text-[10px] tracking-widest px-2">
+        🐕 Victoria Triage: Reviewing Emergency Quote Requests (15-30 Mins)
+    </div>
+
+    <main class="max-w-6xl mx-auto py-8 md:py-12 px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
         <header>
             <div class="rounded-3xl shadow-xl mb-6 overflow-hidden border-4 border-white">
-                <img src="pics/vet.png" alt="Veterinary clinic triage in Victoria" class="w-full h-80 object-cover">
+                <img src="pics/vet.png" alt="Emergency Veterinary Triage Victoria" class="w-full h-56 md:h-80 object-cover">
             </div>
-            <h1 class="text-5xl font-black mb-4 text-[#4a3728]">Expert Care for Your <span class="text-[#8c6d4f]">Furbaby's Emergency.</span></h1>
+            <h1 class="text-3xl md:text-5xl font-black mb-4 text-[#4a3728] leading-tight">Expert Care for Your <span class="text-[#8c6d4f]">Furbaby's Emergency.</span></h1>
+            <p class="text-lg text-slate-600 mb-8 leading-relaxed">Immediate cost estimates and rapid medical triage for pets in distress.</p>
             
-            <h2 class="text-2xl font-bold mb-4 text-[#4a3728]">Emergency Triage Services</h2>
-            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-700 mb-8">
-                <li>• Rapid Emergency Triage</li>
+            <h2 class="text-xl font-bold mb-4 text-[#4a3728]">Triage Services:</h2>
+            <ul class="grid grid-cols-1 gap-2 text-slate-700 text-sm mb-8">
                 <li>• Urgent Surgical Quotes</li>
                 <li>• Wound & Trauma Care</li>
                 <li>• Poison & Toxin Treatment</li>
-                <li>• Diagnostic X-Ray & Ultrasound</li>
+                <li>• Diagnostic Imaging Estimates</li>
             </ul>
         </header>
 
-        <section class="bg-white p-8 rounded-3xl shadow-2xl border border-slate-100">
-            <h2 class="text-2xl font-bold mb-6 text-center text-[#4a3728]">Request Emergency Quote</h2>
+        <section id="lead-form" class="bg-white p-6 md:p-8 rounded-3xl shadow-2xl border border-stone-100">
+            <h2 class="text-xl md:text-2xl font-bold mb-6 text-center text-[#4a3728]">Request Emergency Quote</h2>
             <form action="#" class="space-y-4">
-                <input type="text" placeholder="Your Name & Pet's Name" required class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 outline-none focus:ring-2 focus:ring-[#8c6d4f]">
-                <input type="tel" placeholder="Best Phone Number" required class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 outline-none focus:ring-2 focus:ring-[#8c6d4f]">
-                <select class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 outline-none focus:ring-2 focus:ring-[#8c6d4f] font-medium">
+                <input type="text" placeholder="Your Name & Pet's Breed" required class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 text-lg outline-none focus:ring-2 focus:ring-[#8c6d4f]">
+                <input type="tel" placeholder="Best Phone Number" required class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 text-lg outline-none focus:ring-2 focus:ring-[#8c6d4f]">
+                <select class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 text-lg font-medium">
                     <option>Critical Injury / Accident</option>
-                    <option>Sudden Illness / Pain Relief</option>
-                    <option>Request a General Surgery Quote</option>
+                    <option>Sudden Illness / Pain</option>
+                    <option>General Surgery Quote</option>
                 </select>
-                <button class="w-full bg-[#4a3728] text-white font-black py-5 rounded-xl text-xl hover:bg-[#2d2118] transition shadow-lg transform hover:scale-[1.02]">REQUEST QUOTE NOW</button>
+                <button class="w-full bg-[#4a3728] text-white font-black py-5 rounded-xl text-xl hover:bg-[#2d2118] transition shadow-lg active:scale-95">REQUEST QUOTE NOW</button>
             </form>
         </section>
     </main>
 
-    <footer class="bg-[#2d2118] text-white py-10 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h3 class="font-bold mb-4 uppercase tracking-widest text-sm text-stone-400">Serving Greater Victoria & BC:</h3>
-            <p class="text-sm text-stone-300">Downtown Victoria, Saanich, Oak Bay, Esquimalt, Langford, Colwood, Sidney, View Royal, Highlands, and Metchosin.</p>
+    <footer class="bg-[#2d2118] text-white py-10 px-6 mb-12 md:mb-0">
+        <div class="max-w-6xl mx-auto text-center md:text-left">
+            <h3 class="font-bold mb-4 uppercase tracking-widest text-xs text-stone-400">Serving Greater Victoria & BC:</h3>
+            <p class="text-xs text-gray-300">Downtown Victoria, Saanich, Oak Bay, Esquimalt, Langford.</p>
         </div>
     </footer>
 </body>
